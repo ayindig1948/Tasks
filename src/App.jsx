@@ -18,14 +18,17 @@ useEffect(() => {
   localStorage.setItem('tasks', JSON.stringify(Tasks));
 }, [Tasks]);
   return (
-    
+    <>
      <div className="max-w-lg mx-auto mt-10 bg-gray-100 p-6 rounded-lg shadow-lg"> 
     <h1 className=" text-3xl font-bold text-center pt-10 mb-4">Tasks App</h1>
     <p className="text-gray-700 text-center mb-6">Manage your tasks efficiently and stay organized.</p>
     <TaskForm Tasks={Tasks} setTasks={setTasks} />
     <TaskList Tasks={Tasks} deleteTask={deleteTask} />
     </div>
-
+    <footer className="text-center text-gray-500 text-sm mt-6">
+      &copy; 2026 <a href="https://github.com/ayindig1948" className="text-blue-500 hover:underline"> Ay Indig</a>. All rights reserved.
+    </footer>
+</>
   )
 }
 
