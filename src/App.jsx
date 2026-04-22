@@ -26,7 +26,7 @@ useEffect(() => {
     <TaskList Tasks={Tasks} deleteTask={deleteTask} />
     </div>
     <footer className="text-center text-gray-500 text-sm mt-6">
-      &copy; 2026 <a href="https://github.com/ayindig1948" className="text-blue-500 hover:underline"> By Ay Indig</a>. All rights reserved.
+      &copy; 2026  By<a href="https://github.com/ayindig1948" className="text-blue-500 hover:underline"> Ay Indig</a>. All rights reserved.
     </footer>
 </>
   )
